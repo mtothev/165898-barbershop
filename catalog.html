@@ -8,9 +8,9 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-        <div class="header-logo">
+          <div class="header-logo">
           <a href="#"><img src="http://placehold.it/111x24" alt="Барбершоп «Бородинский»" width="111" height="24"></a>
-        </div>
+          </div>
           <ul>
             <li>
               <a href="#">Информация</a>
@@ -22,7 +22,7 @@
               <a href="#">Прайс-лист</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a class="selected" href="#">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -53,44 +53,45 @@
           <a class="product-image" href="#" title="Набор для путешествий «Baxter of California»"><img src="http://placehold.it/220x165" alt="Набор для путешествий «Baxter of California»" width="220" height="165"></a>
           <h3>Набор для путешествий<br>
           «Baxter of California»</h3>
-		      <b>2 900 РУБ.</b>
+		      <b>2 900 руб.</b>
           <a class="btn" href="#">Купить</a>
         </article>
         <article class="product-card">
           <a class="product-image" href="#" title="Увлажняющий кондиционер «Baxter of California»"><img src="http://placehold.it/220x165" alt="Увлажняющий кондиционер «Baxter of California»" width="220" height="165"></a>
-          <h3>Увлажняющий кондиционер<br>
+          <h3><span>Увлажняющий кондиционер</span><br>
           «Baxter of California»</h3>
-		      <b>750 РУБ.</b>
+		      <b>750 руб.</b>
           <a class="btn" href="#">Купить</a>
         </article>
         <article class="product-card">
           <a class="product-image" href="#" title="Гель для волос «SUAVECITO»"><img src="http://placehold.it/220x165" alt="Гель для волос «SUAVECITO»" width="220" height="165"></a>
-          <h3>Гель для волос<br>
+          <h3><span>Гель для волос</span><br>
           «SUAVECITO»</h3>
-		      <b>290 РУБ.</b>
+		      <b>290 руб.</b>
           <a class="btn" href="#">Купить</a>
         </article>
         <article class="product-card">
           <a class="product-image" href="#" title="Глина для укладки волос «American crew»"><img src="http://placehold.it/220x165" alt="Глина для укладки волос «American crew»" width="220" height="165"></a>
-          <h3>Глина для укладки волос<br>
+          <h3><span>Глина для укладки волос</span><br>
           «American crew»</h3>
-		      <b>500 РУБ.</b>
+		      <b>500 руб.</b>
           <a class="btn" href="#">Купить</a>
         </article>
         <article class="product-card">
           <a class="product-image" href="#" title="Гель для волос «AMERICAN CREW»"><img src="http://placehold.it/220x165" alt="Гель для волос «AMERICAN CREW»" width="220" height="165"></a>
-          <h3>Гель для волос<br>
+          <h3><span>Гель для волос</span><br>
           «AMERICAN CREW»</h3>
-		      <b>300 РУБ.</b>
+		      <b>300 руб.</b>
           <a class="btn" href="#">Купить</a>
         </article>
         <article class="product-card">
           <a class="product-image" href="#" title="Набор для бритья «Baxter of California»"><img src="http://placehold.it/220x165" alt="Набор для бритья «Baxter of California»" width="220" height="165"></a>
-          <h3>Набор для бритья<br>
+          <h3><span>Набор для бритья</span><br>
           «Baxter of California»</h3>
-		      <b>3 900 РУБ.</b>
+		      <b>3 900 руб.</b>
           <a class="btn" href="#">Купить</a>
         </article>
+
         <nav class="pages">
           <a href="#">1</a>
           <span>2</span>
@@ -100,45 +101,46 @@
       </section>
 
       <section class="left-sidebar">
-        <form class="brands-and-products" action="#" method="get">
+        <form class="brands-and-products" action="#" method="post">
           <section class="brands">
-            <h2>ПРОИЗВОДИТЕЛИ:</h2>
+            <h3>Производители:</h3>
             <div class="brands-checkbox">
               <div class="brands-option">
                 <label>
-                  <input type="checkbox" checked name="1">Baxter of California
+                  <input type="checkbox" checked name="Baxter-of-California">Baxter of California
                 </label>
               </div>
               <div class="brands-option">
                 <label>
-                  <input type="checkbox" name="2">Mr Natty
+                  <input type="checkbox" name="Mr-Natty">Mr Natty
                 </label>
               </div>
               <div class="brands-option">
                 <label>
-                  <input type="checkbox" checked name="3">Suavecito
+                  <input type="checkbox" checked name="Suavecito">Suavecito
                 </label>
               </div>
               <div class="brands-option">
                 <label>
-                  <input type="checkbox" name="4">Malin+Goetz
+                  <input type="checkbox" name="Malin+Goetz">Malin+Goetz
                 </label>
               </div>
               <div class="brands-option">
                 <label>
-                  <input type="checkbox" name="5">Murray’s
+                  <input type="checkbox" name="Murray’s">Murray’s
                 </label>
               </div>
               <div class="brands-option">
                 <label>
-                  <input type="checkbox" checked name="6">American Crew
+                  <input type="checkbox" checked name="American-Crew">American Crew
                 </label>
               </div>
             </div>
+            <!-- Не стал использовать value, т.к. в посвященном чекбоксу задании HTML Academy говорится, что этот атрибут здесь необязателен, а вот имена у всех чекбоксов должны быть разными-->
           </section>
         
           <section class="product-groups">
-            <h2>ГРУППЫ ТОВАРОВ:</h2>
+            <h3>Группы товаров:</h3>
             <div class="product-groups-radio">
               <div class="product-groups-option">
                 <label>
@@ -170,10 +172,10 @@
     <footer class="main-footer">
       <div class="container">
         <section class="footer-contacts">
-          Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
-          Телефон: +7 (812) 666-02-66
+          <p>Барбершоп «Бородинский»</p>
+          <p>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+          <p><a href="#">Как нас найти?</a></p>
+          <p>Телефон: +7 (812) 666-02-66</p>
         </section>
         <section class="footer-social">
           <p>Давайте дружить!</p>
